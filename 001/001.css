@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+}
+.container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	height: 100vh; 
+}
+
+.signup{
+	background-color: #4dffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.title {
+	font-size: 2.2rem;
+	color: #444;
+	margin-bottom: 20px;
+}
+
+.input-field {
+	height: 50px;
+	background-color: #f0f0f0;
+	display: grid;
+	grid-template-columns: 15% 85%;
+	border-radius: 55px;
+	padding: 0 .4rem;
+	margin-bottom: 10px;
+}
+
+.input-field i {
+	text-align: center;
+	line-height: 50px;
+	color: #acacac;
+	font-size: 1rem;
+}
+
+.input-field input {
+	border: none;
+	outline: none;
+	background: none;
+	font-weight: 500;
+	font-size: 1rem;
+}
+
+.btn {
+	width: 150px;
+	height: 50px;
+	border: none;
+	outline: none;
+	background: #5995fd;
+	color: #fff;
+	border-radius: 50px;
+	margin: 10px 0 15px 0;
+	font-size: 1rem;
+	transition: 0.5s all;
+}
+
+.btn:hover {
+	background-color: #4d84e2;
+}
+
+.social-text {
+	color: #333;
+	padding: 10px 0;
+}
+
+.social-media {
+	display: flex;
+	justify-content: center;
+}
+
+.social-icon {
+	height: 45px;
+	width: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 0.2rem;
+	border: 1px solid #4d44ff;
+	border-radius: 50%;
+	transition: 0.3s all;
+	color: #4d44ff;
+}
+
+.social-icon:hover {
+	border-color: blue;
+	color: blue;
+}
+
+.give-away-box{
+	background: url(children.jpg);
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+	padding: 30px;
+	display: flex;
+	align-items: flex-end;
+}
+.text{
+	background: linear-gradient(45deg, #000, rgba(0,0,0,0.7), transparent);
+	padding: 40px 60px;
+}
+.text small{
+	font-size: 0.7rem;
+}
+@media screen and (max-width: 900px){
+	.container{
+		display: grid;
+		grid-template-columns: auto ;
+		grid-template-rows: 25% 75%;
+		background: url(children.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	.give-away-box{
+		background: linear-gradient(45deg, #000, rgba(0,0,0,0.7), transparent);
+		display: flex;
+		align-items: center;
+	}
+	.text{
+		background: none;
+	}
+	.signup{
+		background: linear-gradient(45deg, #000, rgba(0,0,0,0.7), transparent);
+		min-height: 100%;
+		overflow-y: hidden;
+	}
+	.signup p,.signup h2{
+		color: #fff;
+	}
+	.social-icon:hover{
+		color: #fff;
+		border-color: #fff;
+	}
+	.title{
+		font-size: 1.5rem;
+	}
+	p{
+		font-size: 0.8rem;
+	}
+}
