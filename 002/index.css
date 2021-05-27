@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Poppins', sans-serif;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 40px;
+	background-color: blue;
+	box-shadow: 2px 0px 5px blue;
+	height: 60px;
+}
+nav a{
+	padding: 10px;
+	color: #fff;
+}
+#logo{
+	color: orange;
+	font-style: italic;
+}
+.logo{
+	font-weight: 600;
+	font-size: 1.4rem;
+}
+.order-process{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 15px 30px;
+	color: #ccc;
+	font-size: 15px;
+	height: 50px;
+}
+.order-process a{
+	color: #ccc;
+}
+.active {
+	font-size: 20px;
+	color: #000 !important;
+}
+.card-center{
+	padding: 0px;
+	display: grid;
+	grid-template-columns: 1fr 1.7fr;
+	height: calc(100vh - 110px);
+}
+.company-cards{
+	/*height: 500px;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	background-color: #f0f0ff;
+}
+.company-cards h3,.company-cards ul{
+	padding: 0px 20px;
+}
+.company-cards ul li{
+	padding: 10px 15px;
+	border: 2px solid #fff;
+	margin-top: 10px;
+}
+.company-cards ul li input{
+	margin-right: 10px;
+}
+.company-cards ul li input:checked li{
+	color: #fff;
+}
+.credit-cards-container{
+	padding: 60px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: #f0f0ff;
+}
+.credit-card-center{
+	position: relative;
+	width: 500px;
+	height: 250px;
+}
+.upper{
+	position: absolute;
+	width: 350px;
+	padding: 20px;
+	top: 0;
+	left: 0;
+	background-color: #4d0000;
+	border-radius: 10px;
+	color: #fff;
+	z-index: 2;
+	box-shadow: 1px 1px 5px #4d0000;
+}
+.company-cards h2{
+	color: #0066ee;
+}
+.company-cards ul li:first-child{
+	border: 2px solid #0066ee;
+}
+.card-photo{
+	display: flex;
+	justify-content: space-between;
+}
+.upper input{
+	width: 100%;
+	border: none;
+	background-color: transparent;
+	font-size: 17px;
+	margin-top: 10px;
+	font-family: 'Roboto Slab', serif;
+	text-shadow: 1px -0.6px 0px #D3D3D3;
+	color: #333;
+}
+.upper input::placeholder{
+	color: #D3D3D3;
+}
+.upper input:focus{
+	color: #D3D3D3;
+}
+.lower{
+	z-index: 1;
+	position: absolute;
+	width: 350px;
+	right: 0;
+	bottom: 0;
+	background-color: #4d0000;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px #4d0000;
+}
+.upper:hover{
+	box-shadow: 2px 0px 5px #D3D3D3;
+}
+.lower:hover{
+	box-shadow: 3px 0px 5px #000;
+}
+.blank{
+	width: 100%;
+	height: 40px;
+	background-color: #000;
+	margin-top: 35px
+}
+.cvv-container{
+	width: 100%;
+	height: 40px;
+	background-color: #eee;
+	margin-bottom: 40px;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+}
+.cvv-container .cvv{
+	background-color: #fff;
+	width:55px;
+	height:40px;
+	display: flex;
+	align-items: center;
+}
+.cvv-container .cvv input{
+	font-size: 14px;
+	border: none;
+	outline: none;
+	padding-left: 7px;
+	font-family: 'Roboto Slab', serif;
+}
+.details{
+	font-size: 12px;
+	padding: 10px;
+	color: #fff;
+	text-align: justify;
+}
+.proceed{
+	margin-top: 40px;
+	padding: 10px 20px;
+	background-color: #7fff00;
+	color: #fff;
+	border: none;
+	outline: none;
+	font-size: 20px;
+}
+
+@media screen and (max-width: 1100px){
+	.card-center{
+		grid-template-columns: 1fr;
+	}
+	.company-cards{
+	height: 500px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
